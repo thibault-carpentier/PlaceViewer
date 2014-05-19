@@ -59,25 +59,25 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     // Controlling the loggin
-    if (![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        [[logInViewController logInView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
-        
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        [[signUpViewController signUpView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
-        
-        // Assign sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-        
-        // Present the log in view controller
-        [self presentViewController:logInViewController animated:YES completion:NULL];
-    }
+//    if (![PFUser currentUser]) { // No user logged in
+//        // Create the log in view controller
+//        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+//        [logInViewController setDelegate:self]; // Set ourselves as the delegate
+//        
+//        [[logInViewController logInView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
+//        
+//        // Create the sign up view controller
+//        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+//        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+//        
+//        [[signUpViewController signUpView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
+//        
+//        // Assign sign up controller to be displayed from the login controller
+//        [logInViewController setSignUpController:signUpViewController];
+//        
+//        // Present the log in view controller
+//        [self presentViewController:logInViewController animated:YES completion:NULL];
+//    }
 
 }
 
