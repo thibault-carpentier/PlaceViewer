@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09144A7313C2997E00388B00 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09144A7213C2997E00388B00 /* Entitlements.plist */; };
+		092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B213A1D7EB00DA740F /* CFNetwork.framework */; };
+		092354B513A1D7F000DA740F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B413A1D7F000DA740F /* SystemConfiguration.framework */; };
+		092354B713A1D83C00DA740F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B613A1D83C00DA740F /* MobileCoreServices.framework */; };
+		094ACA0014367ACD008398F8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094AC9FF14367ACD008398F8 /* Parse.framework */; };
+		095ACE8613C68EA300566243 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095ACE8513C68EA300566243 /* AudioToolbox.framework */; };
+		099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */; };
+		09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07113A1D52D009C3FCF /* UIKit.framework */; };
+		09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
+		09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09ABC07A13A1D52D009C3FCF /* InfoPlist.strings */; };
+		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
+		2124E61A1922B2AD0095D75F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2124E6191922B2AD0095D75F /* MapKit.framework */; };
+		21C71A6D19217A0C00967473 /* Krack-exercice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C71A6C19217A0C00967473 /* Krack-exercice.storyboard */; };
+		21C71A7C1921A68900967473 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372FF551613CC42002132AF /* Social.framework */; };
+		21C71A7E1921A6EC00967473 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C71A7D1921A6EC00967473 /* Twitter.framework */; };
+		21C71A7F1921A6F300967473 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372FF521613CC3C002132AF /* Accounts.framework */; };
+		21D1F650192992AC00CB0199 /* KrackMapTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F646192992AC00CB0199 /* KrackMapTableView.m */; };
+		21D1F651192992AC00CB0199 /* KrackMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F648192992AC00CB0199 /* KrackMapViewController.m */; };
+		21D1F652192992AC00CB0199 /* KrackPlacesMKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F64A192992AC00CB0199 /* KrackPlacesMKAnnotation.m */; };
+		21D1F653192992AC00CB0199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F64B192992AC00CB0199 /* main.m */; };
+		21D1F654192992AC00CB0199 /* ParseStarterProjectAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F64D192992AC00CB0199 /* ParseStarterProjectAppDelegate.m */; };
+		21D1F655192992AC00CB0199 /* PlacesQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F64F192992AC00CB0199 /* PlacesQueryTableViewController.m */; };
+		21D1F65C1929931100CB0199 /* green_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6561929931100CB0199 /* green_circle.png */; };
+		21D1F65D1929931100CB0199 /* green_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6571929931100CB0199 /* green_circle@2x.png */; };
+		21D1F65E1929931100CB0199 /* purple_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6581929931100CB0199 /* purple_circle.png */; };
+		21D1F65F1929931100CB0199 /* purple_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6591929931100CB0199 /* purple_circle@2x.png */; };
+		21D1F6601929931100CB0199 /* red_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F65A1929931100CB0199 /* red_circle.png */; };
+		21D1F6611929931100CB0199 /* red_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F65B1929931100CB0199 /* red_circle@2x.png */; };
+		21D1F6631929932900CB0199 /* krack-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6621929932900CB0199 /* krack-header.png */; };
+		21D1F6671929933500CB0199 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6641929933500CB0199 /* Default-568h@2x.png */; };
+		21D1F6681929933500CB0199 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6651929933500CB0199 /* Default.png */; };
+		21D1F6691929933500CB0199 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21D1F6661929933500CB0199 /* Default@2x.png */; };
+		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
+		4998650515BF305000803E05 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4998650415BF305000803E05 /* StoreKit.framework */; };
+		743D7B6D157DA60100084B67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743D7B6C157DA60100084B67 /* CoreGraphics.framework */; };
+		DD952FCB16E7F5CF00470144 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E18B1E1624CB5700B17A67 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09144A7213C2997E00388B00 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		092354B213A1D7EB00DA740F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		092354B413A1D7F000DA740F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		092354B613A1D83C00DA740F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		094AC9FF14367ACD008398F8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		095ACE8513C68EA300566243 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		09ABC06D13A1D52D009C3FCF /* Krack-exercice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Krack-exercice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09ABC07113A1D52D009C3FCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09ABC07313A1D52D009C3FCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09ABC07913A1D52D009C3FCF /* Krack-exercice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Krack-exercice-Info.plist"; sourceTree = "<group>"; };
+		09ABC07B13A1D52D009C3FCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2124E6191922B2AD0095D75F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		21C71A6C19217A0C00967473 /* Krack-exercice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Krack-exercice.storyboard"; path = "../Krack-exercice.storyboard"; sourceTree = "<group>"; };
+		21C71A7D1921A6EC00967473 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		21D1F645192992AC00CB0199 /* KrackMapTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KrackMapTableView.h; path = Classes/KrackMapTableView.h; sourceTree = "<group>"; };
+		21D1F646192992AC00CB0199 /* KrackMapTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KrackMapTableView.m; path = Classes/KrackMapTableView.m; sourceTree = "<group>"; };
+		21D1F647192992AC00CB0199 /* KrackMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KrackMapViewController.h; path = Classes/KrackMapViewController.h; sourceTree = "<group>"; };
+		21D1F648192992AC00CB0199 /* KrackMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KrackMapViewController.m; path = Classes/KrackMapViewController.m; sourceTree = "<group>"; };
+		21D1F649192992AC00CB0199 /* KrackPlacesMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KrackPlacesMKAnnotation.h; path = Classes/KrackPlacesMKAnnotation.h; sourceTree = "<group>"; };
+		21D1F64A192992AC00CB0199 /* KrackPlacesMKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KrackPlacesMKAnnotation.m; path = Classes/KrackPlacesMKAnnotation.m; sourceTree = "<group>"; };
+		21D1F64B192992AC00CB0199 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/main.m; sourceTree = "<group>"; };
+		21D1F64C192992AC00CB0199 /* ParseStarterProjectAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseStarterProjectAppDelegate.h; path = Classes/ParseStarterProjectAppDelegate.h; sourceTree = "<group>"; };
+		21D1F64D192992AC00CB0199 /* ParseStarterProjectAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseStarterProjectAppDelegate.m; path = Classes/ParseStarterProjectAppDelegate.m; sourceTree = "<group>"; };
+		21D1F64E192992AC00CB0199 /* PlacesQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesQueryTableViewController.h; path = Classes/PlacesQueryTableViewController.h; sourceTree = "<group>"; };
+		21D1F64F192992AC00CB0199 /* PlacesQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesQueryTableViewController.m; path = Classes/PlacesQueryTableViewController.m; sourceTree = "<group>"; };
+		21D1F6561929931100CB0199 /* green_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green_circle.png; path = Images/green_circle.png; sourceTree = "<group>"; };
+		21D1F6571929931100CB0199 /* green_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green_circle@2x.png"; path = "Images/green_circle@2x.png"; sourceTree = "<group>"; };
+		21D1F6581929931100CB0199 /* purple_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purple_circle.png; path = Images/purple_circle.png; sourceTree = "<group>"; };
+		21D1F6591929931100CB0199 /* purple_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple_circle@2x.png"; path = "Images/purple_circle@2x.png"; sourceTree = "<group>"; };
+		21D1F65A1929931100CB0199 /* red_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red_circle.png; path = Images/red_circle.png; sourceTree = "<group>"; };
+		21D1F65B1929931100CB0199 /* red_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red_circle@2x.png"; path = "Images/red_circle@2x.png"; sourceTree = "<group>"; };
+		21D1F6621929932900CB0199 /* krack-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "krack-header.png"; path = "Images/krack-header.png"; sourceTree = "<group>"; };
+		21D1F6641929933500CB0199 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		21D1F6651929933500CB0199 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
+		21D1F6661929933500CB0199 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Default@2x.png"; sourceTree = "<group>"; };
+		21D1F66A1929941C00CB0199 /* Krack-exercice-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Krack-exercice-Prefix.pch"; sourceTree = "<group>"; };
+		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4998650415BF305000803E05 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6332375315E438E900AE2736 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6372FF521613CC3C002132AF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		6372FF551613CC42002132AF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6372FF571613CC47002132AF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		743D7B6C157DA60100084B67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		97E18B1E1624CB5700B17A67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09ABC06A13A1D52D009C3FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2124E61A1922B2AD0095D75F /* MapKit.framework in Frameworks */,
+				21C71A7F1921A6F300967473 /* Accounts.framework in Frameworks */,
+				21C71A7E1921A6EC00967473 /* Twitter.framework in Frameworks */,
+				21C71A7C1921A68900967473 /* Social.framework in Frameworks */,
+				DD952FCB16E7F5CF00470144 /* CoreLocation.framework in Frameworks */,
+				4998650515BF305000803E05 /* StoreKit.framework in Frameworks */,
+				743D7B6D157DA60100084B67 /* CoreGraphics.framework in Frameworks */,
+				2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */,
+				099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */,
+				09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */,
+				095ACE8613C68EA300566243 /* AudioToolbox.framework in Frameworks */,
+				092354B713A1D83C00DA740F /* MobileCoreServices.framework in Frameworks */,
+				092354B513A1D7F000DA740F /* SystemConfiguration.framework in Frameworks */,
+				092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */,
+				09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */,
+				09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */,
+				094ACA0014367ACD008398F8 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09ABC06213A1D52D009C3FCF = {
+			isa = PBXGroup;
+			children = (
+				09ABC07713A1D52D009C3FCF /* Krack-exercice */,
+				09ABC07013A1D52D009C3FCF /* Frameworks */,
+				09ABC06E13A1D52D009C3FCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09ABC06E13A1D52D009C3FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09ABC06D13A1D52D009C3FCF /* Krack-exercice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09ABC07013A1D52D009C3FCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2124E6191922B2AD0095D75F /* MapKit.framework */,
+				21C71A7D1921A6EC00967473 /* Twitter.framework */,
+				6372FF571613CC47002132AF /* AdSupport.framework */,
+				6372FF551613CC42002132AF /* Social.framework */,
+				6372FF521613CC3C002132AF /* Accounts.framework */,
+				095ACE8513C68EA300566243 /* AudioToolbox.framework */,
+				092354B213A1D7EB00DA740F /* CFNetwork.framework */,
+				743D7B6C157DA60100084B67 /* CoreGraphics.framework */,
+				97E18B1E1624CB5700B17A67 /* CoreLocation.framework */,
+				09ABC07313A1D52D009C3FCF /* Foundation.framework */,
+				6332375315E438E900AE2736 /* libsqlite3.dylib */,
+				099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */,
+				092354B613A1D83C00DA740F /* MobileCoreServices.framework */,
+				094AC9FF14367ACD008398F8 /* Parse.framework */,
+				2FCDD6AF14A573F500295AAC /* QuartzCore.framework */,
+				09BEF34B13D51C3F001BBCDB /* Security.framework */,
+				4998650415BF305000803E05 /* StoreKit.framework */,
+				092354B413A1D7F000DA740F /* SystemConfiguration.framework */,
+				09ABC07113A1D52D009C3FCF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09ABC07713A1D52D009C3FCF /* Krack-exercice */ = {
+			isa = PBXGroup;
+			children = (
+				21D1F64319297C5900CB0199 /* Utils */,
+				21D1F647192992AC00CB0199 /* KrackMapViewController.h */,
+				21D1F648192992AC00CB0199 /* KrackMapViewController.m */,
+				21D1F64C192992AC00CB0199 /* ParseStarterProjectAppDelegate.h */,
+				21D1F64D192992AC00CB0199 /* ParseStarterProjectAppDelegate.m */,
+				21D1F64E192992AC00CB0199 /* PlacesQueryTableViewController.h */,
+				21D1F64F192992AC00CB0199 /* PlacesQueryTableViewController.m */,
+				21C71A6C19217A0C00967473 /* Krack-exercice.storyboard */,
+				09ABC07813A1D52D009C3FCF /* Supporting Files */,
+			);
+			path = "Krack-exercice";
+			sourceTree = "<group>";
+		};
+		09ABC07813A1D52D009C3FCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21C71A6E19217BEC00967473 /* images */,
+				21D1F6641929933500CB0199 /* Default-568h@2x.png */,
+				21D1F6651929933500CB0199 /* Default.png */,
+				21D1F6661929933500CB0199 /* Default@2x.png */,
+				09ABC07913A1D52D009C3FCF /* Krack-exercice-Info.plist */,
+				09144A7213C2997E00388B00 /* Entitlements.plist */,
+				09ABC07A13A1D52D009C3FCF /* InfoPlist.strings */,
+				21D1F66A1929941C00CB0199 /* Krack-exercice-Prefix.pch */,
+				21D1F64B192992AC00CB0199 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21C71A6E19217BEC00967473 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				21D1F62A192971A300CB0199 /* Circles */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		21D1F62A192971A300CB0199 /* Circles */ = {
+			isa = PBXGroup;
+			children = (
+				21D1F6561929931100CB0199 /* green_circle.png */,
+				21D1F6571929931100CB0199 /* green_circle@2x.png */,
+				21D1F6581929931100CB0199 /* purple_circle.png */,
+				21D1F6591929931100CB0199 /* purple_circle@2x.png */,
+				21D1F65A1929931100CB0199 /* red_circle.png */,
+				21D1F65B1929931100CB0199 /* red_circle@2x.png */,
+				21D1F6621929932900CB0199 /* krack-header.png */,
+			);
+			name = Circles;
+			sourceTree = "<group>";
+		};
+		21D1F64319297C5900CB0199 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21D1F645192992AC00CB0199 /* KrackMapTableView.h */,
+				21D1F646192992AC00CB0199 /* KrackMapTableView.m */,
+				21D1F649192992AC00CB0199 /* KrackPlacesMKAnnotation.h */,
+				21D1F64A192992AC00CB0199 /* KrackPlacesMKAnnotation.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09ABC06C13A1D52D009C3FCF /* Krack-exercice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "Krack-exercice" */;
+			buildPhases = (
+				09ABC06913A1D52D009C3FCF /* Sources */,
+				09ABC06A13A1D52D009C3FCF /* Frameworks */,
+				09ABC06B13A1D52D009C3FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Krack-exercice";
+			productName = ParseStarterProject;
+			productReference = 09ABC06D13A1D52D009C3FCF /* Krack-exercice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09ABC06413A1D52D009C3FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "Krack-exercice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09ABC06213A1D52D009C3FCF;
+			productRefGroup = 09ABC06E13A1D52D009C3FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09ABC06C13A1D52D009C3FCF /* Krack-exercice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09ABC06B13A1D52D009C3FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */,
+				21D1F65D1929931100CB0199 /* green_circle@2x.png in Resources */,
+				21C71A6D19217A0C00967473 /* Krack-exercice.storyboard in Resources */,
+				21D1F6681929933500CB0199 /* Default.png in Resources */,
+				09144A7313C2997E00388B00 /* Entitlements.plist in Resources */,
+				21D1F6611929931100CB0199 /* red_circle@2x.png in Resources */,
+				21D1F65C1929931100CB0199 /* green_circle.png in Resources */,
+				21D1F6691929933500CB0199 /* Default@2x.png in Resources */,
+				21D1F6671929933500CB0199 /* Default-568h@2x.png in Resources */,
+				21D1F65E1929931100CB0199 /* purple_circle.png in Resources */,
+				21D1F65F1929931100CB0199 /* purple_circle@2x.png in Resources */,
+				21D1F6601929931100CB0199 /* red_circle.png in Resources */,
+				21D1F6631929932900CB0199 /* krack-header.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09ABC06913A1D52D009C3FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D1F653192992AC00CB0199 /* main.m in Sources */,
+				21D1F650192992AC00CB0199 /* KrackMapTableView.m in Sources */,
+				21D1F655192992AC00CB0199 /* PlacesQueryTableViewController.m in Sources */,
+				21D1F651192992AC00CB0199 /* KrackMapViewController.m in Sources */,
+				21D1F652192992AC00CB0199 /* KrackPlacesMKAnnotation.m in Sources */,
+				21D1F654192992AC00CB0199 /* ParseStarterProjectAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09ABC07A13A1D52D009C3FCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09ABC07B13A1D52D009C3FCF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09ABC08C13A1D52E009C3FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09ABC08D13A1D52E009C3FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		09ABC08F13A1D52E009C3FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Krack-exercice/Krack-exercice-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Krack-exercice/Krack-exercice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Krack-exercice";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09ABC09013A1D52E009C3FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Krack-exercice/Krack-exercice-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Krack-exercice/Krack-exercice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Krack-exercice";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "Krack-exercice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABC08C13A1D52E009C3FCF /* Debug */,
+				09ABC08D13A1D52E009C3FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09ABC08E13A1D52E009C3FCF /* Build configuration list for PBXNativeTarget "Krack-exercice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09ABC08F13A1D52E009C3FCF /* Debug */,
+				09ABC09013A1D52E009C3FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09ABC06413A1D52D009C3FCF /* Project object */;
+}

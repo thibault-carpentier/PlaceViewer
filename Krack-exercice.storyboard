@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gmN-bm-qHj">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Krack Map View Controller-->
+        <scene sceneID="C7f-EJ-nUF">
+            <objects>
+                <viewController id="xM4-bq-dCc" customClass="KrackMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uku-sV-wKi"/>
+                        <viewControllerLayoutGuide type="bottom" id="1l2-Nr-inq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8ge-WI-ruH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cR9-bg-kxD">
+                                <rect key="frame" x="0.0" y="20" width="320" height="326"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xM4-bq-dCc" id="1ku-dv-65S"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kp7-gp-iWi">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="EuM-Ew-oYv">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="xM4-bq-dCc" id="TAg-Kp-Mz6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="UZ7-gY-9GO">
+                            <connections>
+                                <action selector="filterButtonPressed:" destination="xM4-bq-dCc" id="yPP-V4-MXF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="placesMapView" destination="cR9-bg-kxD" id="M4M-4d-BNe"/>
+                        <outlet property="searchDisplayController" destination="QDa-fk-y0A" id="UTl-Wi-xUj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="570-eC-Onk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="z0Y-P4-MQ8">
+                    <connections>
+                        <outlet property="delegate" destination="xM4-bq-dCc" id="G2R-F4-wpP"/>
+                        <outlet property="searchContentsController" destination="xM4-bq-dCc" id="r1X-Qj-yb0"/>
+                        <outlet property="searchResultsDataSource" destination="xM4-bq-dCc" id="bTD-kK-Aao"/>
+                        <outlet property="searchResultsDelegate" destination="xM4-bq-dCc" id="ndM-WK-OFX"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="5JW-e0-6Hy">
+                    <connections>
+                        <outlet property="delegate" destination="xM4-bq-dCc" id="mjM-lt-DgM"/>
+                        <outlet property="searchContentsController" destination="xM4-bq-dCc" id="dye-xP-ZeC"/>
+                        <outlet property="searchResultsDataSource" destination="xM4-bq-dCc" id="Vye-yE-lp9"/>
+                        <outlet property="searchResultsDelegate" destination="xM4-bq-dCc" id="7h9-So-eVk"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="fwu-7S-bUy">
+                    <connections>
+                        <outlet property="delegate" destination="xM4-bq-dCc" id="uxU-OP-mOW"/>
+                        <outlet property="searchContentsController" destination="xM4-bq-dCc" id="b2X-2i-6Fk"/>
+                        <outlet property="searchResultsDataSource" destination="xM4-bq-dCc" id="CIM-8Q-CzV"/>
+                        <outlet property="searchResultsDelegate" destination="xM4-bq-dCc" id="jUs-Ek-gqV"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="gJO-rq-fvJ">
+                    <connections>
+                        <outlet property="delegate" destination="xM4-bq-dCc" id="q8X-ID-Pb2"/>
+                        <outlet property="searchContentsController" destination="xM4-bq-dCc" id="lSH-Ey-Hl7"/>
+                        <outlet property="searchResultsDataSource" destination="xM4-bq-dCc" id="oVw-mJ-mdy"/>
+                        <outlet property="searchResultsDelegate" destination="xM4-bq-dCc" id="Bq1-Et-bcQ"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="QDa-fk-y0A">
+                    <connections>
+                        <outlet property="delegate" destination="xM4-bq-dCc" id="bnw-ux-qVy"/>
+                        <outlet property="searchContentsController" destination="xM4-bq-dCc" id="Wk7-mg-f7S"/>
+                        <outlet property="searchResultsDataSource" destination="xM4-bq-dCc" id="nQA-bn-efv"/>
+                        <outlet property="searchResultsDelegate" destination="xM4-bq-dCc" id="bUw-Rb-vk2"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="630" y="526"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s39-oQ-npB">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="gmN-bm-qHj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ukv-mX-5RX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xM4-bq-dCc" kind="relationship" relationship="rootViewController" id="HW3-YK-FxG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gb9-Ve-rmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="536"/>
+        </scene>
+        <!--Places Query Table View Controller-->
+        <scene sceneID="vfc-Z9-nde">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewTest" id="nlI-Jd-bkQ" customClass="PlacesQueryTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Vy-Yn-ag1" customClass="KrackMapTableView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="KrackPlaceCellID" rowHeight="75" id="a4z-xw-bKW">
+                                <rect key="frame" x="0.0" y="22" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a4z-xw-bKW" id="L3K-SA-ZMq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egz-qF-FkW">
+                                            <rect key="frame" x="20" y="11" width="224" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="SubtitleRestaurationID" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoh-yl-54G">
+                                            <rect key="frame" x="20" y="36" width="224" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="imageTypeRestaurationID" translatesAutoresizingMaskIntoConstraints="NO" id="2Uc-ND-36u">
+                                            <rect key="frame" x="275" y="24" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nlI-Jd-bkQ" id="K6p-iG-TwC"/>
+                            <outlet property="delegate" destination="nlI-Jd-bkQ" id="wmq-yJ-a4w"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="504-Ix-Jfm" id="kvL-sb-esh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYS-v2-zLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="IjC-nV-bL3">
+                    <connections>
+                        <outlet property="delegate" destination="nlI-Jd-bkQ" id="aCP-Kd-3dc"/>
+                        <outlet property="searchContentsController" destination="nlI-Jd-bkQ" id="ZXb-VQ-KFd"/>
+                        <outlet property="searchResultsDataSource" destination="nlI-Jd-bkQ" id="Z4n-Qi-RbY"/>
+                        <outlet property="searchResultsDelegate" destination="nlI-Jd-bkQ" id="wH4-d0-FRW"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="53p-ye-DHp">
+                    <connections>
+                        <outlet property="delegate" destination="nlI-Jd-bkQ" id="iDT-Xu-DP8"/>
+                        <outlet property="searchContentsController" destination="nlI-Jd-bkQ" id="385-X9-L9d"/>
+                        <outlet property="searchResultsDataSource" destination="nlI-Jd-bkQ" id="Nt5-kH-62e"/>
+                        <outlet property="searchResultsDelegate" destination="nlI-Jd-bkQ" id="pHu-fz-ti4"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="504-Ix-Jfm">
+                    <connections>
+                        <outlet property="delegate" destination="nlI-Jd-bkQ" id="2nZ-UZ-4nM"/>
+                        <outlet property="searchContentsController" destination="nlI-Jd-bkQ" id="dx5-M2-zpu"/>
+                        <outlet property="searchResultsDataSource" destination="nlI-Jd-bkQ" id="dP3-dD-e2a"/>
+                        <outlet property="searchResultsDelegate" destination="nlI-Jd-bkQ" id="DdK-PJ-BLp"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="451" y="-219"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
