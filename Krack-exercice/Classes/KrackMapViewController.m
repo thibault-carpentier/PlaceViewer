@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Loading the tableView from the storyboard
     placestableViewController = [[UIStoryboard storyboardWithName:@"Krack-exercice" bundle:nil] instantiateViewControllerWithIdentifier:@"TableViewTest"];
     // Setting the delegate
@@ -59,25 +60,25 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     // Controlling the loggin
-//    if (![PFUser currentUser]) { // No user logged in
-//        // Create the log in view controller
-//        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-//        [logInViewController setDelegate:self]; // Set ourselves as the delegate
-//        
-//        [[logInViewController logInView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
-//        
-//        // Create the sign up view controller
-//        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-//        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-//        
-//        [[signUpViewController signUpView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
-//        
-//        // Assign sign up controller to be displayed from the login controller
-//        [logInViewController setSignUpController:signUpViewController];
-//        
-//        // Present the log in view controller
-//        [self presentViewController:logInViewController animated:YES completion:NULL];
-//    }
+    if (![PFUser currentUser]) { // No user logged in
+        // Create the log in view controller
+        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+        [logInViewController setDelegate:self]; // Set ourselves as the delegate
+        
+        [[logInViewController logInView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
+        
+        // Create the sign up view controller
+        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+        
+        [[signUpViewController signUpView] setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krack-header.png"]]];
+        
+        // Assign sign up controller to be displayed from the login controller
+        [logInViewController setSignUpController:signUpViewController];
+        
+        // Present the log in view controller
+        [self presentViewController:logInViewController animated:YES completion:NULL];
+    }
 
 }
 
@@ -87,29 +88,58 @@
 }
 
 -(void)enableInset {
-    
-    // Setting the tableView to overlay the map view
-    CGFloat offSet = [placestableViewController tableView:placestableViewController.tableView heightForRowAtIndexPath:nil] - 30.0f;
-    UIEdgeInsets inset = UIEdgeInsetsMake(placesMapView.frame.size.height - offSet, 0.0f, 0.0f, 00.f);
-    
-    // Updating the tableView position.
-    placesTableView.contentInset = inset;
-    placesTableView.contentOffset = CGPointMake(0.0f, -(placesMapView.frame.size.height - offSet));
-    placesTableView.scrollIndicatorInsets = inset;
-    
-    placesMapView.hidden = NO;
-    [placestableViewController loadObjects];
+    [UIView animateWithDuration:.25 animations:^{
+        NSLog(@"Enabling insets");
+        // Setting the tableView to overlay the map view
+        CGFloat offSet = [placestableViewController tableView:placestableViewController.tableView heightForRowAtIndexPath:nil] - 30.0f;
+        UIEdgeInsets inset = placesTableView.contentInset; // UIEdgeInsetsMake(placesMapView.frame.size.height - offSet, 0.0f, 0.0f, 0.0f);
+        inset.top = placesMapView.frame.size.height - offSet;
+        
+        // Updating the tableView position.
+        placesTableView.contentInset = inset;
+        placesTableView.contentOffset = CGPointMake(0.0f, -(placesMapView.frame.size.height - offSet));
+        placesTableView.scrollIndicatorInsets = inset;
+        
+        placesMapView.hidden = NO;
+        [placestableViewController loadObjects];
+        
+        
+//    // Setting the tableView to overlay the map view
+//    CGFloat offSet = [placestableViewController tableView:placestableViewController.tableView heightForRowAtIndexPath:nil] - 30.0f;
+//    UIEdgeInsets inset = UIEdgeInsetsMake(placesMapView.frame.size.height - offSet, 0.0f, 0.0f, 00.f);
+//    
+//    // Updating the tableView position.
+//    placesTableView.contentInset = inset;
+//    placesTableView.contentOffset = CGPointMake(0.0f, -(placesMapView.frame.size.height - offSet));
+//    placesTableView.scrollIndicatorInsets = inset;
+//    
+//    placesMapView.hidden = NO;
+    }];
 }
 
 - (void)disableInset {
-    CGFloat offset = self.navigationController.navigationBar.frame.size.height  + [UIApplication sharedApplication].statusBarFrame.size.height;
-    UIEdgeInsets inset = UIEdgeInsetsMake(offset, 0.0f, 0.0f, 00.f);
-    placesTableView.contentInset = inset;
-    placesTableView.contentOffset = CGPointMake(0.0f, -offset);
-    placesTableView.scrollIndicatorInsets = inset;
-    
-    // Hidding the map while in search
-    placesMapView.hidden = YES;
+    [UIView animateWithDuration:.25 animations:^{
+        NSLog(@"Disable insets");
+        CGFloat offset = self.navigationController.navigationBar.frame.size.height  + [UIApplication sharedApplication].statusBarFrame.size.height;
+        UIEdgeInsets inset = placesTableView.contentInset;// UIEdgeInsetsMake(offset, 0.0f, 0.0f, 0.0f);
+        inset.top = offset;
+        
+        placesTableView.contentInset = inset;
+        placesTableView.contentOffset = CGPointMake(0.0f, -offset);
+        placesTableView.scrollIndicatorInsets = inset;
+        
+        // Hidding the map while in search
+        placesMapView.hidden = YES;
+        
+//    CGFloat offset = self.navigationController.navigationBar.frame.size.height  + [UIApplication sharedApplication].statusBarFrame.size.height;
+//    UIEdgeInsets inset = UIEdgeInsetsMake(offset, 0.0f, 0.0f, 00.f);
+//    placesTableView.contentInset = inset;
+//    placesTableView.contentOffset = CGPointMake(0.0f, -offset);
+//    placesTableView.scrollIndicatorInsets = inset;
+//    
+//    // Hidding the map while in search
+//    placesMapView.hidden = YES;
+    }];
 }
 
 -(void)viewDidLayoutSubviews {

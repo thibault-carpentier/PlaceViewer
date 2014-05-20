@@ -394,7 +394,7 @@
 				GCC_PREFIX_HEADER = "Krack-exercice/Krack-exercice-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Krack-exercice/Krack-exercice-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "Krack-exercice";
 				WRAPPER_EXTENSION = app;
 			};
@@ -414,7 +414,7 @@
 				GCC_PREFIX_HEADER = "Krack-exercice/Krack-exercice-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Krack-exercice/Krack-exercice-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "Krack-exercice";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
