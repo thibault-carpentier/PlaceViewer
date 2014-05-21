@@ -92,7 +92,7 @@
         NSLog(@"Enabling insets");
         // Setting the tableView to overlay the map view
         CGFloat offSet = [placestableViewController tableView:placestableViewController.tableView heightForRowAtIndexPath:nil] - 30.0f;
-        UIEdgeInsets inset = placesTableView.contentInset; // UIEdgeInsetsMake(placesMapView.frame.size.height - offSet, 0.0f, 0.0f, 0.0f);
+        UIEdgeInsets inset = placesTableView.contentInset;
         inset.top = placesMapView.frame.size.height - offSet;
         
         // Updating the tableView position.
@@ -101,19 +101,6 @@
         placesTableView.scrollIndicatorInsets = inset;
         
         placesMapView.hidden = NO;
-        [placestableViewController loadObjects];
-        
-        
-//    // Setting the tableView to overlay the map view
-//    CGFloat offSet = [placestableViewController tableView:placestableViewController.tableView heightForRowAtIndexPath:nil] - 30.0f;
-//    UIEdgeInsets inset = UIEdgeInsetsMake(placesMapView.frame.size.height - offSet, 0.0f, 0.0f, 00.f);
-//    
-//    // Updating the tableView position.
-//    placesTableView.contentInset = inset;
-//    placesTableView.contentOffset = CGPointMake(0.0f, -(placesMapView.frame.size.height - offSet));
-//    placesTableView.scrollIndicatorInsets = inset;
-//    
-//    placesMapView.hidden = NO;
     }];
 }
 
@@ -121,7 +108,7 @@
     [UIView animateWithDuration:.25 animations:^{
         NSLog(@"Disable insets");
         CGFloat offset = self.navigationController.navigationBar.frame.size.height  + [UIApplication sharedApplication].statusBarFrame.size.height;
-        UIEdgeInsets inset = placesTableView.contentInset;// UIEdgeInsetsMake(offset, 0.0f, 0.0f, 0.0f);
+        UIEdgeInsets inset = placesTableView.contentInset;
         inset.top = offset;
         
         placesTableView.contentInset = inset;
@@ -130,15 +117,6 @@
         
         // Hidding the map while in search
         placesMapView.hidden = YES;
-        
-//    CGFloat offset = self.navigationController.navigationBar.frame.size.height  + [UIApplication sharedApplication].statusBarFrame.size.height;
-//    UIEdgeInsets inset = UIEdgeInsetsMake(offset, 0.0f, 0.0f, 00.f);
-//    placesTableView.contentInset = inset;
-//    placesTableView.contentOffset = CGPointMake(0.0f, -offset);
-//    placesTableView.scrollIndicatorInsets = inset;
-//    
-//    // Hidding the map while in search
-//    placesMapView.hidden = YES;
     }];
 }
 
