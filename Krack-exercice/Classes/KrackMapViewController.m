@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // Loading the tableView from the storyboard
     placestableViewController = [[UIStoryboard storyboardWithName:@"Krack-exercice" bundle:nil] instantiateViewControllerWithIdentifier:@"TableViewTest"];
     // Setting the delegate
@@ -89,7 +89,6 @@
 
 -(void)enableInset {
     [UIView animateWithDuration:.25 animations:^{
-        NSLog(@"Enabling insets");
         // Setting the tableView to overlay the map view
         CGFloat offSet = [placestableViewController tableView:placestableViewController.tableView heightForRowAtIndexPath:nil] - 30.0f;
         UIEdgeInsets inset = placesTableView.contentInset;
@@ -106,7 +105,6 @@
 
 - (void)disableInset {
     [UIView animateWithDuration:.25 animations:^{
-        NSLog(@"Disable insets");
         CGFloat offset = self.navigationController.navigationBar.frame.size.height  + [UIApplication sharedApplication].statusBarFrame.size.height;
         UIEdgeInsets inset = placesTableView.contentInset;
         inset.top = offset;
@@ -316,12 +314,6 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)aSearchBar {
     [searchBar resignFirstResponder];
-}
-
-#pragma mark - UIKeyboard Notification handlers
-
-- (void)keyboardDidHide: (NSNotification *) notif{
-    [self enableInset];
 }
 
 @end

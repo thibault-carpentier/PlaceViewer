@@ -26,6 +26,10 @@
 	<string>1.2.19</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Krack-exercice</string>
 	<key>UISupportedInterfaceOrientations</key>

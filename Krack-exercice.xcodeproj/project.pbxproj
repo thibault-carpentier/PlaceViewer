@@ -257,6 +257,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					09ABC06C13A1D52D009C3FCF = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 09ABC06713A1D52D009C3FCF /* Build configuration list for PBXProject "Krack-exercice" */;
 			compatibilityVersion = "Xcode 3.2";
