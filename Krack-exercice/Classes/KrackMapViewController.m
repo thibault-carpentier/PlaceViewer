@@ -318,4 +318,10 @@
     [searchBar resignFirstResponder];
 }
 
+#pragma mark - UIKeyboard Notification handlers
+
+- (void)keyboardDidHide: (NSNotification *) notif{
+    [self enableInset];
+}
+
 @end
