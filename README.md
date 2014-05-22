@@ -28,4 +28,4 @@ Repository Infos
     Owner:			Thibault Carpentier
     GitHub:			https://github.com/Loadex
     LinkedIn:		www.linkedin.com/in/CarpentierThibault/
-    StackOverflow:	stackoverflow.com/users/182676/macmade
+    StackOverflow:	http://stackoverflow.com/users/1324369/loadex
