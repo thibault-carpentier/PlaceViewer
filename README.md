@@ -1,4 +1,4 @@
-
+Place Viewer
 =======
 
 Quick 2 days Project, this app integrate a sign-in/ sign/up feature and an inteface showing places on a map and on a list.
@@ -8,10 +8,10 @@ This project is based on a Parse.
 
 Screenshots
 ------
-![Login View](/relative/path/to/img.jpg?raw=true "The login View")
-![Main View](/relative/path/to/img.jpg?raw=true "The application main view")
-![Search](/relative/path/to/img.jpg?raw=true "You can filter places by Name and type (circle color)")
-![Place detail](/relative/path/to/img.jpg?raw=true "Place detail")
+![Login View](/Screenshots/LoginView.png?raw=true "The login View")
+![Main View](/Screenshots/LandingScreen.png?raw=true "The application main view")
+![Search](/Screenshots/PlaceSearch.png?raw=true "You can filter places by Name and type (circle color)")
+![Place detail](/Screenshots/PlaceDetail.png?raw=true "Place detail")
 
 Requirements
 ------
@@ -28,4 +28,4 @@ Repository Infos
     Owner:			Thibault Carpentier
     GitHub:			https://github.com/Loadex
     LinkedIn:		www.linkedin.com/in/CarpentierThibault/
-    StackOverflow:	stackoverflow.com/users/182676/macmade
+    StackOverflow:	http://stackoverflow.com/users/1324369/loadex
