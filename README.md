@@ -4,7 +4,7 @@ Place Viewer
 Quick 2 days Project, this app integrate a sign-in/ sign/up feature and an inteface showing places on a map and on a list.
 Places can be filtered with a text search and by type or both.
 
-This project is based on a Parse.
+This project is based on Parse.
 
 Screenshots
 ------
